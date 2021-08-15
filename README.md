@@ -1,2 +1,4 @@
-Overview
-Rock paper scissors game created for the Javascript Fullstack curriculum on The Odin Project.
+<h1>About this project</h1>
+A simple Rock paper scissors game played in the console against the computer.
+A game interface is gonna be added in the future.
+
