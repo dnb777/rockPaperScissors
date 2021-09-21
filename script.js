@@ -44,6 +44,14 @@ function win(userChoice, computerChoice) {
   actionMessage.textContent = `You Win! ${userChoice} beats ${computerChoice}`;
   userChoiceDiv.classList.add('greenGlow');
   setTimeout( () => userChoiceDiv.classList.remove('greenGlow'), 300);
+
+  if (userScore === 5) {
+    userScore = 0;
+    computerScore = 0;
+    userScore_span.textContent = 0;
+    computerScore_span.textContent = 0;
+    return actionMessage.textContent = `You Reached 5 Points, You Won the Game!`;
+  };
 };
 function lose(userChoice, computerChoice) {
   const userChoiceDiv = document.getElementById(userChoice);
@@ -52,6 +60,14 @@ function lose(userChoice, computerChoice) {
   actionMessage.textContent = `You Loose! ${computerChoice} beats ${userChoice}`
   userChoiceDiv.classList.add('redGlow');
   setTimeout( () => userChoiceDiv.classList.remove('redGlow'), 300);
+
+  if (computerScore === 5) {
+    userScore = 0;
+    computerScore = 0;
+    userScore_span.textContent = 0;
+    computerScore_span.textContent = 0;
+    return actionMessage.textContent = `Arghh The Computer Won The Game! Better Luck Next Time`;
+  };
 };
 function draw (userChoice, computerChoice) {
   const userChoiceDiv = document.getElementById(userChoice);
