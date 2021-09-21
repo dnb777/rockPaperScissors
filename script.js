@@ -53,6 +53,7 @@ function win(userChoice, computerChoice) {
     return actionMessage.textContent = `You Reached 5 Points, You Won the Game!`;
   };
 };
+
 function lose(userChoice, computerChoice) {
   const userChoiceDiv = document.getElementById(userChoice);
   computerScore++;
@@ -69,12 +70,14 @@ function lose(userChoice, computerChoice) {
     return actionMessage.textContent = `Arghh The Computer Won The Game! Better Luck Next Time`;
   };
 };
+
 function draw (userChoice, computerChoice) {
   const userChoiceDiv = document.getElementById(userChoice);
   actionMessage.textContent = `It's a Draw! both pick ${userChoice}`;
   userChoiceDiv.classList.add('greyGlow');
   setTimeout( () => userChoiceDiv.classList.remove('greyGlow'), 300);
 }
+
 function main() {
   rockDiv.addEventListener('click', () => game('rock'));
   paperDiv.addEventListener('click', () => game('paper'));
