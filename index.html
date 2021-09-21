@@ -1,10 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Rock,paper,scissors</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock, Paper, Scissors Game!</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<script src="script.js"></script>
+  <header class="header">
+    <h1 class="header-title">Rock, Paper, Scissors!</h1>
+    <p class="header-para">Man Aganinst Machine, Can You Win?!</p>
+  </header>
+
+  <main class="container">
+    <p id="message">Choose Your Weapon...</p>
+    <div class="choices">
+      <div class="choice" id="rock">
+        <img src="img/rock.png" alt="Rock">
+      </div>
+      <div class="choice" id="paper">
+        <img src="img/paper.png" alt="Paper">
+      </div>
+      <div class="choice" id="scissors">
+        <img src="img/scissors.png" alt="Scissors">
+      </div>
+    </div>
+
+    <div class="score-board">
+      <p id="user-label" class="name-tag">Player</p>
+      <p id="computer-label" class="name-tag">Computer</p>
+      <span id="user-score">0</span>:<span id="computer-score">0</span>
+    </div>
+  </main>
+  
+
+  <script src="script.js"></script>
 </body>
 </html>

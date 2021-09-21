@@ -1,0 +1,117 @@
+:root {
+	--fuentePrincipal: 'Black Ops One', cursive;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 1.6ren;
+	background-color: #252525;
+}
+
+img {
+	width: 100%;
+}
+
+/*HEADER*/
+.header {
+	background-color: #333333;
+	margin: 0;
+}
+.header-title {
+	font-family: var(--fuentePrincipal);
+	font-size: 7rem;
+	color: #FFF;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 1px 4px #e1e1e9;
+	margin: 0;
+	padding: 2rem;
+}
+.header-para {
+	font-family: var(--fuentePrincipal);
+	font-size: 3rem;
+	color: #e1e1e1;
+	text-align: center;
+	margin: 0;
+	padding-bottom: 2rem;
+}
+
+/*MAIN*/
+.container {
+	margin: 5rem auto 0 auto;
+}
+#message {
+	font-family: monospace;
+	font-size: 3rem;
+	color: #FFF;
+	text-align: center;
+	margin-bottom: 10rem;
+}
+.choices {
+	display: flex;
+	flex: 1;
+	gap: 3rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.choice {
+	width: 20rem;
+	border: 4px solid #FFF;
+	border-radius: 50%;
+	padding: 2rem;
+	transition: all .3s ease;
+}
+.choice:hover {
+	cursor: pointer;
+	background-color: #0F0F0F;
+}
+
+.greenGlow {
+	border: 5px solid #00DD19;
+	box-shadow: 0 0 10px #0FB62A;
+}
+.redGlow {
+	border: 5px solid #FF0000;
+	box-shadow: 0 0 10px #CA0000;
+}
+.greyGlow {
+	border: 5px solid #656565;
+	box-shadow: 0 0 10px #9B9B9B;
+}
+
+/*SCORE-BOARD*/
+.score-board {
+	margin: 10rem auto;
+	width: 20rem;
+	border: 3px solid #FFF;
+	border-radius: 3px;
+	text-align: center;
+	color: #FFF;
+	font-size: 5rem;
+	padding: 3rem 2rem;
+	position: relative;
+}
+.name-tag {
+	font-size:  1.8rem;
+	background-color: #CD0101;
+	border-radius: 3px;
+	padding: .5rem 1rem;
+}
+#user-label {
+	position: absolute;
+	left: -4rem;
+}
+#computer-label {
+	position: absolute;
+	right: -6rem;
+}
